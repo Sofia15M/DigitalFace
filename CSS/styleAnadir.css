@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+/*font-family: 'Lobster', cursive; Titulos*/ 
+/*font-family: 'Bitter', serif; Otros textos*/
+/*font-family: 'Montserrat Alternates', sans-serif;*/
+
+:root {
+    --negro1: black;
+    --negro: #252525;
+    --cafe: #A89283;
+    --gris3: #B2B0AE;
+    --gris2: #D7D5D3;
+    --gris1: #E7E5E4;
+    --azul: #007bff;
+    --azul1: #0056b3;
+    --rojo: #AE2012;
+    --rojo1: #9B2226;
+    --verde: #558B2F;
+    --verde1: #33691E;
+    --naranja: #CA6702;
+    --naranja1: #BB3E03;
+}
+
+* {
+    font-family: 'Bitter', serif;
+}
+
+body {
+    background-color: var(--gris1);
+    margin: 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    width: 700px; /* Ajustar el ancho del formulario */
+    height: 450px;
+    margin: 0 auto; /* Centrar horizontalmente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrar verticalmente */
+    background-color: var(--gris2);
+    margin-top: 50px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: var(--gris1);
+}
+
+/* Estilos para el botón tipo submit */
+/* Estilos para el botón */
+button[type="submit"] {
+    background-color: var(--naranja);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--naranja1);
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Tres columnas en total */
+    grid-gap: 20px; /* Espacio entre las columnas */
+}
+
+.column {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Estilo para los campos y etiquetas dentro de las columnas */
+.column label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.column input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.column-left {
+    width: 40%; /* Ajustar el ancho del div izquierdo */
+    float: left; /* Alinear a la izquierda */
+}
+
+.column-right {
+    width: 40%; /* Ajustar el ancho del div derecho */
+    float: right; /* Alinear a la izquierda */
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    font-family: 'Bitter', serif;
+    background-color: var(--naranja); /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 10px; /* Relleno del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 4px; /* Borde redondeado del botón */
+    cursor: pointer; /* Cambia el cursor al puntero al pasar por encima del botón */
+}
+
+/* Estilos para el botón "Elegir archivo" al hacer hover */
+input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: var(--naranja1); /* Color de fondo al hacer hover */
+}
+
+h2{
+    text-align: center;
+}

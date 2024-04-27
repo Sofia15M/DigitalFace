@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+/*font-family: 'Lobster', cursive; Titulos*/ 
+/*font-family: 'Bitter', serif; Otros textos*/
+/*font-family: 'Montserrat Alternates', sans-serif;*/
+
+:root {
+    --Negro: #252525;
+    --gris: #D7D5D3;
+    --Azul1: #00112D;
+    --Azul2: #011640;
+    --Azul3: #297EA3;
+    --Azul4: #79DCF2;
+    --Azul5: #BFF9FF;
+    --azul: #007bff;
+    --azul1: #0056b3;
+    --rojo: #AE2012;
+    --rojo1: #9B2226;
+    --verde: #558B2F;
+    --verde1: #33691E;
+    --naranja: #CA6702;
+    --naranja1: #BB3E03;
+}
+
+*{
+    font-family: 'Bitter', serif;
+}
+
+body {
+    font-family: 'Bitter', serif;
+    color: var(--Negro);
+    background-color: white;
+    padding: 100px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+tr:hover {
+    background-color: var(--Azul5);
+    cursor: pointer;
+}
+
+td {
+    border: 2px solid var(--Negro);
+    padding: 10px;
+    text-align: left;
+    background-color: #f5f5f5;
+}
+
+th {
+    border: 2px solid var(--Negro);
+    padding: 10px;
+    text-align: left;
+    background-color: var(--Azul5);
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--naranja); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+}
+
+/* Cambio de estilo al pasar el mouse sobre el botón */
+.boton:hover {
+    background-color: var(--naranja1); /* Cambiar el color de fondo al pasar el mouse */
+}
+
+/* Estilos para el botón pdf */
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #007bff; /* Borde del botón */
+    border-radius: 5px;
+    background-color:var(--azul); /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+}
+
+/* Cambio de estilo al pasar el mouse sobre el botón */
+.btn-primary:hover {
+    background-color: var(--azul1); /* Cambiar el color de fondo al pasar el mouse */
+}
+
+.editar{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--verde); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    margin-bottom: 10px;
+    width: 77px;
+}
+
+.editar:hover {
+    background-color: var(--verde1); /* Cambiar el color de fondo al pasar el mouse */
+}
+
+.desativar{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--rojo); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+}
+
+.desativar:hover {
+    background-color: var(--rojo1); /* Cambiar el color de fondo al pasar el mouse */
+}
+
+.titulo{
+    text-align: center;
+}

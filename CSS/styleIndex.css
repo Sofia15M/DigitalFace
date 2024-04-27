@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root{
+    --Negro: #252525;
+    --Azul1: #00112D;
+    --Azul2: #011640;
+    --Azul3: #297EA3;
+    --Azul4: #79DCF2;
+    --Azul5: #BFF9FF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body{ 
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    background-size: cover; /* Ajusta el tamaño de la imagen al tamaño de la ventana del navegador */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el desplazamiento de la página */
+    /* Puedes ajustar otros estilos según tus necesidades */
+}
+
+/*Estilos para el encabezado*/
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--Azul1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 5);
+}
+
+.conteiner {
+    width: 450px;
+    margin: 50px auto 0;
+}
+
+.conteiner article {
+    transition: box-shadow 0.3s ease;
+    background-color: var(--Azul1);
+    margin: 1rem 0;
+    padding: 0.25rem 0;
+    cursor: pointer;
+    margin-top: 130px;
+}
+
+.conteiner article:hover {
+    box-shadow: 0.5rem 0.5rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+.conteiner article h1, .conteiner article h2, .conteiner article p {
+    margin: 1rem;
+    color: white;
+}
+
+/* Estilo base del botón */
+#cerrarSesion {
+    background-color: var(--Azul3);
+    /*Colordefondodelbotón*/color: white;
+    /*Colordeltextodelbotón*/padding: 10px 20px;
+    /*Espaciadointernodelbotón*/border: none;
+    /*Sinborde*/border-radius: 4px;;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Estilo al pasar el ratón sobre el botón */
+#cerrarSesion:hover {
+    background-color: var(--Azul2); /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Estilo al hacer clic en el botón */
+#cerrarSesion:active {
+    background-color: var(--Azul3); /* Cambia el color de fondo al hacer clic */
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container .btn-menu {
+    float: left;
+    line-height:100px;
+}
+.container .btn-menu label{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.container .menu{
+    float: right;
+    line-height: 100px;
+}
+.container .menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.container .menu a:hover{
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+/*Fin de Estilos para el encabezado*/
+
+/* Estilo para el botón principal */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    min-width: 250px
+}
+
+/* Estilo para el contenido desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--Azul3);
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Estilo para los elementos de la lista */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Cambiar el color de fondo cuando se pasa el mouse sobre los elementos de la lista */
+.dropdown-content a:hover {
+    background-color: white;
+}
+
+/* Mostrar el contenido desplegable cuando se pasa el mouse sobre el botón */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*Menù lateral*/
+#btn-menu{
+    display: none;
+}
+.container-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 1000px;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: var(--Azul1);
+    height: 100%;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 6px solid var(--Azul4);
+    background: var(--Azul2);
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
