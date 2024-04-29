@@ -54,7 +54,7 @@ h1, p{
 section {
     position: relative;
     min-height: 100vh;
-    background-color: var(--Azul5);
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
