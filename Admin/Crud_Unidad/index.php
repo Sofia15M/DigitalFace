@@ -38,7 +38,7 @@
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo "<h1><strong>Informacion Unidad</strong></h1>
                         <br>
-                        <img src='mostrar_imagen.php?id={$row['ID_UNIDAD']}' style='width: 150px; height: 180px;'></td>   
+                        <img src='mostrar_imagen.php?id={$row['ID_UNIDAD']}' style='width: 450px;'></td>   
                         <br>
                         <p>ID Unidad: {$row['ID_UNIDAD']}</p>
                         <p>Nombre: {$row['Nombre_Unidad']}</p>
