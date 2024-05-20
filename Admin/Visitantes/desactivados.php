@@ -29,7 +29,7 @@ include '../../Conexion/conexion.php';
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th colspan="11" class="titulo">Visitantes Desactivados</th>
+                                    <th colspan="10" class="titulo">Visitantes Desactivados</th>
                                 </tr>
 
                                 <tr>
@@ -41,7 +41,6 @@ include '../../Conexion/conexion.php';
                                     <th scope="col">Hora de entrada</th>
                                     <th scope="col">Hora de salida</th>
                                     <th scope="col">N. Apartamento</th>
-                                    <th scope="col">Estado</th>
                                     <th scope="col">Acciones</th>
                                 </tr>
                             </thead>
@@ -60,7 +59,6 @@ include '../../Conexion/conexion.php';
                                                 <td>{$row['Hora_Ingreso']}</td>
                                                 <td>{$row['Hora_Salida']}</td>
                                                 <td>{$row['ID_Apartamento']}</td>
-                                                <td>{$row['status']}</td>
                                                 <td>
                                                 <a href='activar.php?id={$row['ID_Visitante']}' class='activar'>Activar</a>
                                                 </td>
