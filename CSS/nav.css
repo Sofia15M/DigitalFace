@@ -44,6 +44,19 @@
     padding-bottom: 5px;
 }
 
+.icono {
+    background-color: var(--Azul3);
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 5px;
+    cursor: pointer; 
+}
+
+.icono:hover {
+    background-color: var(--azul2);
+}
+
 .desativados{
     padding: 10px 20px;
     font-size: 16px;

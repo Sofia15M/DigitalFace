@@ -39,6 +39,7 @@ table {
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
+    border: 1px solid var(--Negro);
 }
 
 tr:hover {
@@ -47,17 +48,19 @@ tr:hover {
 }
 
 td {
-    border: 2px solid var(--Negro);
+
+    border: 1px solid var(--Negro);
     padding: 10px;
     text-align: left;
     background-color: #f5f5f5;
 }
 
 th {
-    border: 2px solid var(--Negro);
+    border: 1px solid var(--Negro);
     padding: 10px;
     text-align: left;
-    background-color: var(--Azul5);
+    background-color: var(--Azul3);
+    color: white;
 }
 
 .boton {
