@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../CSS/styleUnidad.css">
     <link rel="stylesheet" href="../../CSS/nav.css">
     <link rel="icon" href="../../IMG/Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Info. Unidad</title>
 </head>
 <body>
@@ -14,16 +15,11 @@
         <div class="container">
             <nav class="menu">
                 <a href="#">Unidad</a>
+                <a href="#" class="fa fa-print icono" title="Imprimir"></a>
                 <a href="../IndexAdmin.php" class="atras">Volver atrás</a>
             </nav>
         </div>
     </header>
-
-    <br>
-
-    <form method="post" action="index.php">
-        <button type="submit" name="download_pdf" class="btn btn-primary">Descargar PDF</button>
-    </form>
 
     <br>
 
