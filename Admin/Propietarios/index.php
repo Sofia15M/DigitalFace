@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../../CSS/style.css">
     <link rel="stylesheet" href="../../CSS/nav.css">
     <link rel="icon" href="../../IMG/Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Info. Propietarios</title>
 </head>
 <body>
@@ -12,6 +13,7 @@
         <div class="container">
             <nav class="menu">
                 <a href="#">Propietarios</a>
+                <a href="#" class="fa fa-print icono" title="Imprimir"></a>
                 <a href="desactivados.php" class="desativados">Ver Desactivados</a>
                 <a href="../IndexAdmin.php" class="atras">Volver atrás</a>
             </nav>
@@ -22,10 +24,6 @@
             <div class="col-md-9">
                 <div class="card">
                     <div class="card-body">
-                        <br>
-                        <form method="post" action="index.php">
-                            <button type="submit" name="download_pdf" class="btn btn-primary">Descargar PDF</button>
-                        </form>
                         <br>
                         <a href="añadir.php" class="boton">Añadir nuevo propietario</a>
                         <br/><br/>
