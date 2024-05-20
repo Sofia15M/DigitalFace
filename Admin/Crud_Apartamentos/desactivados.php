@@ -29,14 +29,12 @@ include '../../Conexion/conexion.php';
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th colspan="5" class="titulo">Apartamentos Desactivados</th>
+                                    <th colspan="3" class="titulo">Apartamentos Desactivados</th>
                                 </tr>
 
                                 <tr>
                                     <th scope="col">Numero Apartamento</th>
                                     <th scope="col">Informacion</th>
-                                    <th scope="col">Unidad</th>
-                                    <th scope="col">Estado</th>
                                     <th scope="col">Acciones</th>
                                 </tr>
                             </thead>
@@ -49,8 +47,6 @@ include '../../Conexion/conexion.php';
                                         echo "<tr>
                                                 <td>{$row['ID_Apartamento']}</td>
                                                 <td>{$row['Descripcion_Apartamento']}</td>
-                                                <td>{$row['ID_UNIDAD']}</td>
-                                                <td>{$row['status']}</td>
                                                 <td>
                                                 <a href='activar.php?id={$row['ID_Apartamento']}' class='activar'>Activar</a>
                                                 </td>
