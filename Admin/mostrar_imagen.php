@@ -1,5 +1,5 @@
 <?php
-$conexion = new mysqli("localhost", "root", "", "v_014_digitalface");
+$conexion = new mysqli("localhost", "root", "", "v_015_digitalface");
 
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $id = $_GET['id'];
