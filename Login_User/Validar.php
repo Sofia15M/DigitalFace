@@ -1,5 +1,5 @@
 <?php
-$conexion = new mysqli("localhost", "root", "", "v_014_digitalface");
+$conexion = new mysqli("localhost", "root", "", "v_015_digitalface");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
