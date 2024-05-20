@@ -29,7 +29,7 @@ include '../../Conexion/conexion.php';
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th colspan="10" class="titulo">Visitantes Desactivados</th>
+                                    <th colspan="9" class="titulo">Visitantes Desactivados</th>
                                 </tr>
 
                                 <tr>

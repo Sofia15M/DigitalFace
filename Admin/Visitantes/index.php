@@ -31,7 +31,7 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th colspan="10" class="titulo">Visitantes</th>
+                                    <th colspan="9" class="titulo">Visitantes</th>
                                 </tr>
                                 <tr>
                                     <th scope="col">N. documento</th>
