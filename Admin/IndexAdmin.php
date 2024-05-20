@@ -110,12 +110,6 @@ $conexion->close();
         </article>
     </section>
 
-    
-
-    <a href="#" class="support-button">
-        <img src="support-icon.png" alt="Soporte">
-    </a>
-
     <script>
         // Función para cerrar la sesión
         function cerrarSesion() {
