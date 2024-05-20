@@ -57,6 +57,7 @@ if (isset($_POST['download_pdf'])) {
     <link rel="stylesheet" href="../../CSS/style.css">
     <link rel="stylesheet" href="../../CSS/nav.css">
     <link rel="icon" href="../../IMG/Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Info. Apartamentos</title>
 </head>
 <body>
@@ -64,6 +65,7 @@ if (isset($_POST['download_pdf'])) {
         <div class="container">
         <nav class="menu">
                 <a href="#">Apartamentos</a>
+                <a href="#" class="fa fa-print icono" title="Imprimir"></a>
                 <a href="desactivados.php" class="desativados">Ver Desactivados</a>
                 <a href="../IndexAdmin.php" class="atras" >Volver atras</a>
             </nav>
@@ -76,12 +78,6 @@ if (isset($_POST['download_pdf'])) {
 
                             <br>
 
-                            <form method="post" action="index.php">
-                                <button type="submit" name="download_pdf" class="btn btn-primary">Descargar PDF</button>
-                            </form>
-
-                            <br>
-
                             <a href="añadir.php" class="boton">Añadir nuevo Apartamento</a>
 
                             <br><br>
@@ -90,14 +86,12 @@ if (isset($_POST['download_pdf'])) {
                     
                                 <thead>
                                     <tr>
-                                        <th colspan="5" class="titulo">Apartamentos</th>
+                                        <th colspan="3" class="titulo">Apartamentos</th>
                                     </tr>
 
                                     <tr>
                                         <th scope="col">Numero Apartamento</th>
                                         <th scope="col">Informacion</th>
-                                        <th scope="col">Unidad</th>
-                                        <th cope="col">Estado</th>
                                         <th scope="col">Acciones</th>
                                         
                                     </tr>
@@ -113,8 +107,6 @@ if (isset($_POST['download_pdf'])) {
                                         echo "<tr>
                                                 <td>{$row['ID_Apartamento']}</td>
                                                 <td>{$row['Descripcion_Apartamento']}</td>
-                                                <td>{$row['ID_UNIDAD']}</td>
-                                                <td>{$row['status']}</td>
                                                 <td>
                                                     <a href='edit.php?id={$row['ID_Apartamento']}' class='editar'>Editar</a>
                                                     <a href='desactivar.php?id={$row['ID_Apartamento']}'class='desativar''>Desactivar</a>
