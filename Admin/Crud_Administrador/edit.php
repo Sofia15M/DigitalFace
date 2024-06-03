@@ -46,7 +46,7 @@
             }
         ?>
         <form action="editar.php" method="post">
-            <h2>Editar Información Personal de Vigilancia</h2>
+            <h2>Editar Información del Administrador</h2>
             <input type="hidden" name="id" value="<?php echo $row['ID_Administrador']; ?>">
             <div class="column column-left">
                 <label for="imagen">Imagen:</label>
@@ -71,7 +71,6 @@
                 <br>
                 <label for="tiempo_trabajo">Tiempo de Trabajo:</label>
                 <input type="text" name="tiempo_trabajo" value="<?php echo $row['Tiempo_trabajo']; ?>">
-                <br>
                 <br/>
                 <input type="submit" class="button" name="editar" value="Editar Administrador">
             </div>

@@ -56,38 +56,28 @@ form {
     margin-top: 100px; /* Ajusta el valor según sea necesario para mover el elemento hacia abajo */
 }
 
-div .column-right label, div .column-left label {
+label {
     color: white;
     font-size: 15px;
     display: block;
 }
 
-div .column-right input, div .column-left input{
+input {
     border-radius: 5px;
     color: white;
     border: none;
     outline: none;
     background: none;
     width: 100%;
-    padding: 5px;
+    padding: 8px;
     font-size: 15px;
     padding-bottom: 10px;
     border-bottom: 1px solid white;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-/*
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-    border-bottom: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: var(--gris1);
-*/
-
 /* Estilos para el botón tipo submit */
-div .column-right input[type="submit"] {
+input[type="submit"] {
     background-color: var(--Azul3);
     color: #fff;
     padding: 10px 15px;
@@ -96,51 +86,6 @@ div .column-right input[type="submit"] {
     cursor: pointer;
 }
 
-div .column-right input[type="submit"]:hover {
+input[type="submit"]:hover {
     background-color: var(--Azul2);
-}
-
-.column {
-    padding: 20px;
-    border-radius: 8px;
-}
-
-/* Estilo para los campos y etiquetas dentro de las columnas */
-.column label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-.column input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.column-left {
-    width: 40%; /* Ajustar el ancho del div izquierdo */
-    float: left; /* Alinear a la izquierda */
-}
-
-.column-right {
-    width: 40%; /* Ajustar el ancho del div derecho */
-    float: right; /* Alinear a la izquierda */
-}
-
-input[type="file"]::-webkit-file-upload-button {
-    font-family: 'Bitter', serif;
-    background-color: var(--Azul3); /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    padding: 10px 10px; /* Relleno del botón */
-    border: none; /* Quita el borde del botón */
-    border-radius: 4px; /* Borde redondeado del botón */
-    cursor: pointer; /* Cambia el cursor al puntero al pasar por encima del botón */
-}
-
-/* Estilos para el botón "Elegir archivo" al hacer hover */
-input[type="file"]::-webkit-file-upload-button:hover {
-    background-color: var(--Azul2); /* Color de fondo al hacer hover */
 }

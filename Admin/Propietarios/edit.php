@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="../../CSS/nav.css">
     <link rel="icon" href="../../IMG/Logo.jpg" type="image/x-icon">
     <title>Editar Propietario</title>
+    <style>
+        form {
+            height: 500px;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -45,6 +50,7 @@
                 <input type="file" name="Foto_Propietario" accept="image/*">
             </div>
             <div class="column column-right">
+                <br>
                 <label for="nombre">Nombre:</label>
                 <input type="text" name="Nombre_Propietario" value="<?php echo $row['Nombre_Propietario']; ?>">
                 <br>

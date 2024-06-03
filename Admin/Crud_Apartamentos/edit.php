@@ -5,19 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../CSS/nav.css">
-    <link rel="stylesheet" href="../../CSS/styleEditar.css">
+    <link rel="stylesheet" href="../../CSS/styleEditarU.css">
     <link rel="icon" href="../../IMG/Logo.jpg" type="image/x-icon">
     <title>Editar Info. Apartamento</title>
 
     <style>
         form {
-            background-color: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             height: 300px;
             width: 300px;
-            background-color: var(--gris2);
+            margin-top: 50px;
         }
     </style>
 </head>
