@@ -57,7 +57,7 @@ form {
 }
 
 label {
-    color: white;
+    color: var(--Azul4);
     font-size: 15px;
     display: block;
 }

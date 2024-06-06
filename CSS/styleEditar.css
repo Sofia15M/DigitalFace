@@ -57,7 +57,7 @@ form {
 }
 
 div .column-right label, div .column-left label {
-    color: white;
+    color: var(--Azul4);
     font-size: 15px;
     display: block;
 }
