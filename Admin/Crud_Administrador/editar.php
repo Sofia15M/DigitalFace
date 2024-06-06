@@ -53,4 +53,3 @@ if (isset($_POST['editar'])) {
 
 mysqli_close($connection);
 ?>
-
