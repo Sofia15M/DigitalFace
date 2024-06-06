@@ -42,8 +42,6 @@ include '../../Conexion/conexion.php';
                                     <th scope="col">Telefono</th>
                                     <th scope="col">Tiempo trabajo</th>
                                     <th scope="col">Fecha de Modificación</th>
-                                    <th scope="col">ID Unidad</th>
-                                    <th scope="col">Estado</th>
                                     <th scope="col">Acciones</th>
                                 </tr>
                             </thead>
@@ -63,8 +61,6 @@ include '../../Conexion/conexion.php';
                                                 <td>{$row['Tel_Cel_Vigilante']}</td>
                                                 <td>{$row['Tiempo_trabajo']}</td>
                                                 <td>{$row['Fecha_Registro']}</td>
-                                                <td>{$row['ID_UNIDAD']}</td>
-                                                <td>{$row['status']}</td>
                                                 <td>
                                                 <a href='activar.php?id={$row['ID_Vigilante']}' class='activar'>Activar</a>
                                                 </td>
