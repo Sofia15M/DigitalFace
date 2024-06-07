@@ -8,19 +8,12 @@
 
 :root {
     --negro1: black;
-    --negro: #252525;
-    --cafe: #A89283;
-    --gris3: #B2B0AE;
-    --gris2: #D7D5D3;
+    --Azul1: #00112D;
+    --Azul2: #011640;
+    --Azul3: #297EA3;
+    --Azul4: #79DCF2;
+    --Azul5: #BFF9FF;
     --gris1: #E7E5E4;
-    --azul: #007bff;
-    --azul1: #0056b3;
-    --rojo: #AE2012;
-    --rojo1: #9B2226;
-    --verde: #558B2F;
-    --verde1: #33691E;
-    --naranja: #CA6702;
-    --naranja1: #BB3E03;
 }
 
 * {
@@ -30,6 +23,12 @@
 body {
     background-color: var(--gris1);
     margin: 0;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
 }
 
 form {
@@ -48,25 +47,30 @@ form {
     margin-top: 50px;
 }
 
-label {
+div .column-right label, div .column-left label {
+    color: var(--Azul4);
+    font-size: 15px;
     display: block;
-    margin-bottom: 8px;
 }
 
-input {
+div .column-right input, div .column-left input {
+    border-radius: 5px;
+    color: white;
+    border: none;
+    outline: none;
+    background: none;
     width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: var(--gris1);
+    padding: 5px;
+    font-size: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
 }
 
 /* Estilos para el botón tipo submit */
 /* Estilos para el botón */
 button[type="submit"] {
-    background-color: var(--naranja);
+    background-color: var(--Azul3);
     color: #fff;
     padding: 10px 15px;
     border: none;
@@ -75,19 +79,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: var(--naranja1);
-}
-
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Tres columnas en total */
-    grid-gap: 20px; /* Espacio entre las columnas */
-}
-
-.column {
-    padding: 20px;
-    border-radius: 8px;
+    background-color: var(--Azul2);
 }
 
 /* Estilo para los campos y etiquetas dentro de las columnas */
@@ -117,7 +109,7 @@ button[type="submit"]:hover {
 
 input[type="file"]::-webkit-file-upload-button {
     font-family: 'Bitter', serif;
-    background-color: var(--naranja); /* Color de fondo del botón */
+    background-color: var(--Azul3); /* Color de fondo del botón */
     color: #fff; /* Color del texto del botón */
     padding: 10px 10px; /* Relleno del botón */
     border: none; /* Quita el borde del botón */
@@ -127,9 +119,5 @@ input[type="file"]::-webkit-file-upload-button {
 
 /* Estilos para el botón "Elegir archivo" al hacer hover */
 input[type="file"]::-webkit-file-upload-button:hover {
-    background-color: var(--naranja1); /* Color de fondo al hacer hover */
-}
-
-h2{
-    text-align: center;
+    background-color: var(--Azul2); /* Color de fondo al hacer hover */
 }
